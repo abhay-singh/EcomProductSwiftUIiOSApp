@@ -36,7 +36,7 @@ struct HeartButton: View {
         .aspectRatio(contentMode: .fit)
         .frame(width: 100)
         .foregroundColor(isLikded ? .red : .black)
-    })
+    }).buttonStyle(PlainButtonStyle())
     
   }
 }
