@@ -15,32 +15,32 @@ import Foundation
 
   // MARK: - EcomProduct
 struct EcomProduct: Codable, Hashable {
-  
-  let products: [Product]
+  let products: [Product]?
   
   enum CodingKeys: String, CodingKey {
     case products = "products"
   }
 }
+
   // MARK: - Product
 struct Product: Codable, Hashable {
   let citrusID: String?
-  let title: String
-  let id: String
-  let imageURL: String
-  let price: [Price]
-  let brand: String
-  let badges: [String]
-  let ratingCount: Double
-  let messages: Messages
+  let title: String?
+  let id: String?
+  let imageURL: String?
+  let price: [Price]?
+  let brand: String?
+  let badges: [String]?
+  let ratingCount: Double?
+  let messages: Messages?
   let isAddToCartEnable: Bool
-  let addToCartButtonText: AddToCartButtonText
+  let addToCartButtonText: AddToCartButtonText?
   let isInTrolley: Bool
   let isInWishlist: Bool
-  let purchaseTypes: [PurchaseTypeElement]
+  let purchaseTypes: [PurchaseTypeElement]?
   let isFindMeEnable: Bool
-  let saleUnitPrice: Double
-  let totalReviewCount: Int
+  let saleUnitPrice: Double?
+  let totalReviewCount: Int?
   let isDeliveryOnly: Bool
   let isDirectFromSupplier: Bool
   
@@ -67,7 +67,7 @@ struct Product: Codable, Hashable {
   }
 }
 
-enum AddToCartButtonText: String, Codable {
+enum AddToCartButtonText: String, Codable, Hashable {
   case addToCart = "Add to cart"
   case editQuantity = "Edit quantity"
 }
@@ -75,7 +75,7 @@ enum AddToCartButtonText: String, Codable {
   // MARK: - Messages
 struct Messages: Codable, Hashable {
   let secondaryMessage: String?
-  let sash: Sash
+  let sash: Sash?
   let promotionalMessage: String?
   
   enum CodingKeys: String, CodingKey {
@@ -91,9 +91,9 @@ struct Sash: Codable, Hashable {
 
   // MARK: - Price
 struct Price: Codable, Hashable {
-  let message: Message
-  let value: Double
-  let isOfferPrice: Bool
+  let message: Message?
+  let value: Double?
+  let isOfferPrice: Bool?
   
   enum CodingKeys: String, CodingKey {
     case message = "message"
@@ -109,12 +109,12 @@ enum Message: String, Codable {
 
   // MARK: - PurchaseTypeElement
 struct PurchaseTypeElement: Codable, Hashable {
-  let purchaseType: PurchaseTypeEnum
-  let displayName: DisplayName
-  let unitPrice: Double
-  let minQtyLimit: Int
-  let maxQtyLimit: Int
-  let cartQty: Int
+  let purchaseType: PurchaseTypeEnum?
+  let displayName: DisplayName?
+  let unitPrice: Double?
+  let minQtyLimit: Int?
+  let maxQtyLimit: Int?
+  let cartQty: Int?
   
   enum CodingKeys: String, CodingKey {
     case purchaseType = "purchaseType"
@@ -126,14 +126,14 @@ struct PurchaseTypeElement: Codable, Hashable {
   }
 }
 
-enum DisplayName: String, Codable {
+enum DisplayName: String, Codable, Hashable {
   case case6 = "case (6)"
   case each = "each"
   case perBottle = "per bottle"
   case perCaseOf6 = "per case of 6"
 }
 
-enum PurchaseTypeEnum: String, Codable {
+enum PurchaseTypeEnum: String, Codable, Hashable {
   case bottle = "Bottle"
   case purchaseTypeCase = "Case"
 }

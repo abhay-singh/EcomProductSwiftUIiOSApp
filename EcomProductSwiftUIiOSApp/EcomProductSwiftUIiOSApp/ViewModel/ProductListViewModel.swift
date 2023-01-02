@@ -9,9 +9,12 @@ import Combine
 
 class ProductListViewModel: ObservableObject {
   
-  @Published var products: [Product] 
+  @Published var products: [Product]
+  @Published var isLoading: Bool = false
+  
   private let productController: ProductController
   let viewForSelectedProduct: (Product) -> ProductDetailView
+
   
   init(products: [Product] = [], productController: ProductController, viewForSelectedProduct: @escaping (Product) -> ProductDetailView) {
     self.products = products
@@ -21,15 +24,23 @@ class ProductListViewModel: ObservableObject {
   
   
   func fetchProductList() {
-    APIManager.shared.fetchProductForUrl {[weak self] productData, responseFlag in
-      if responseFlag {
-        DispatchQueue.main.async {
-          self?.products = productData!.products
+    if products.count == 0 {
+      self.isLoading = true
+      APIManager.shared.fetchProductForUrl {[weak self] productData, responseFlag in
+        if responseFlag {
+          DispatchQueue.main.async {
+            self?.products = productData!.products!
+            self?.isLoading = false
+          }
         }
-      } else {
+        
+        DispatchQueue.main.async {
+          self?.isLoading = false
+        }
         
       }
     }
+    
   }
   
   func addOrRemoveProductFromCart(product: Product) {

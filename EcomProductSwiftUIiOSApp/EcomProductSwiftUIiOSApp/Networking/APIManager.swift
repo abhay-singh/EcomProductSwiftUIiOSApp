@@ -61,6 +61,8 @@ final class APIManager {
       guard let data = data, error == nil else {
         return
       }
+        // TODO: Remove artificial slow down
+//      sleep(2)
         //convert to JSON
       do {
         let ecomProduct = try JSONDecoder().decode(EcomProduct.self, from: data)

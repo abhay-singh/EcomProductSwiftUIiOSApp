@@ -15,18 +15,18 @@ struct ProductRow: View {
   var body: some View {
     VStack(alignment: .center){
       ZStack(alignment: .topTrailing) {
-        URLImageView(urlString: product.imageURL)
+        URLImageView(urlString: product.imageURL ?? " ")
         
-        HeartButton(isLikded: heartsProvider.isHearted(id:product.id),
+        HeartButton(isLikded: heartsProvider.isHearted(id:product.id!),
                     function:{
-          heartsProvider.toggle(id: product.id)
+          heartsProvider.toggle(id: product.id!)
           self.function()
         })
         .frame(width: 40, height: 40)
         
       }
-      Text(product.title).bold()
-      Text("\(product.saleUnitPrice)").bold()
+      Text(product.title!).bold()
+      Text("\(product.saleUnitPrice!)").bold()
     }
   }
 }

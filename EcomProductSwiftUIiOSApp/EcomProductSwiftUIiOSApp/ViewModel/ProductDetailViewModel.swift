@@ -22,11 +22,11 @@ class ProductDetailViewModel: ObservableObject {
   private let productController: ProductController
   
   init(product: Product, productController: ProductController) {
-    self.title = product.title
-    self.price = String(product.saleUnitPrice)
-    self.productID = product.id
-    self.imageUrl = product.imageURL
-    self.rating = Int(product.ratingCount)
+    self.title = product.title!
+    self.price = String(product.saleUnitPrice!)
+    self.productID = product.id!
+    self.imageUrl = product.imageURL!
+    self.rating = Int(product.ratingCount!)
     self.product = product
     self.productController = productController
     

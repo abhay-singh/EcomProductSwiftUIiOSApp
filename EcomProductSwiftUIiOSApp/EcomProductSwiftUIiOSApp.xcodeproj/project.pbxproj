@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		900016A3295983D00080137B /* EcomProductSwiftUIiOSAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900016A2295983D00080137B /* EcomProductSwiftUIiOSAppApp.swift */; };
-		900016A5295983D00080137B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900016A4295983D00080137B /* ContentView.swift */; };
 		900016A7295983D30080137B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 900016A6295983D30080137B /* Assets.xcassets */; };
 		900016AA295983D30080137B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 900016A9295983D30080137B /* Preview Assets.xcassets */; };
-		900016B4295983D40080137B /* EcomProductSwiftUIiOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900016B3295983D40080137B /* EcomProductSwiftUIiOSAppTests.swift */; };
 		900016BE295983D40080137B /* EcomProductSwiftUIiOSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900016BD295983D40080137B /* EcomProductSwiftUIiOSAppUITests.swift */; };
 		900016C0295983D40080137B /* EcomProductSwiftUIiOSAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900016BF295983D40080137B /* EcomProductSwiftUIiOSAppUITestsLaunchTests.swift */; };
 		900016D22959853F0080137B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900016D12959853F0080137B /* APIManager.swift */; };
@@ -59,6 +57,8 @@
 		9000170E295C53040080137B /* ToFavouriteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900016F0295ACB330080137B /* ToFavouriteListViewModel.swift */; };
 		9000170F295C53080080137B /* ProductToBeAdded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900016E4295AC9460080137B /* ProductToBeAdded.swift */; };
 		90001710295C530A0080137B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900016D12959853F0080137B /* APIManager.swift */; };
+		900017122962FF570080137B /* APITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900017112962FF570080137B /* APITest.swift */; };
+		90001714296300BB0080137B /* ProductTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90001713296300BB0080137B /* ProductTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,11 +81,9 @@
 /* Begin PBXFileReference section */
 		9000169F295983D00080137B /* EcomProductSwiftUIiOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcomProductSwiftUIiOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		900016A2295983D00080137B /* EcomProductSwiftUIiOSAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcomProductSwiftUIiOSAppApp.swift; sourceTree = "<group>"; };
-		900016A4295983D00080137B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		900016A6295983D30080137B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		900016A9295983D30080137B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		900016AF295983D40080137B /* EcomProductSwiftUIiOSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcomProductSwiftUIiOSAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		900016B3295983D40080137B /* EcomProductSwiftUIiOSAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcomProductSwiftUIiOSAppTests.swift; sourceTree = "<group>"; };
 		900016B9295983D40080137B /* EcomProductSwiftUIiOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcomProductSwiftUIiOSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		900016BD295983D40080137B /* EcomProductSwiftUIiOSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcomProductSwiftUIiOSAppUITests.swift; sourceTree = "<group>"; };
 		900016BF295983D40080137B /* EcomProductSwiftUIiOSAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcomProductSwiftUIiOSAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -104,6 +102,8 @@
 		900016FA295B1FEE0080137B /* HeartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartButton.swift; sourceTree = "<group>"; };
 		900016FE295C2F660080137B /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		90001702295C342A0080137B /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
+		900017112962FF570080137B /* APITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITest.swift; sourceTree = "<group>"; };
+		90001713296300BB0080137B /* ProductTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,12 +154,11 @@
 		900016A1295983D00080137B /* EcomProductSwiftUIiOSApp */ = {
 			isa = PBXGroup;
 			children = (
+				900016A2295983D00080137B /* EcomProductSwiftUIiOSAppApp.swift */,
 				900016D9295AB0690080137B /* View */,
 				900016D8295AB05E0080137B /* ViewModel */,
 				900016D4295986F00080137B /* Model */,
 				900016D0295985270080137B /* Networking */,
-				900016A2295983D00080137B /* EcomProductSwiftUIiOSAppApp.swift */,
-				900016A4295983D00080137B /* ContentView.swift */,
 				900016A6295983D30080137B /* Assets.xcassets */,
 				900016A8295983D30080137B /* Preview Content */,
 			);
@@ -177,7 +176,8 @@
 		900016B2295983D40080137B /* EcomProductSwiftUIiOSAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				900016B3295983D40080137B /* EcomProductSwiftUIiOSAppTests.swift */,
+				900017112962FF570080137B /* APITest.swift */,
+				90001713296300BB0080137B /* ProductTest.swift */,
 			);
 			path = EcomProductSwiftUIiOSAppTests;
 			sourceTree = "<group>";
@@ -370,7 +370,6 @@
 				900016D22959853F0080137B /* APIManager.swift in Sources */,
 				900016EE295ACAFF0080137B /* ProductListViewModel.swift in Sources */,
 				900016FB295B1FEE0080137B /* HeartButton.swift in Sources */,
-				900016A5295983D00080137B /* ContentView.swift in Sources */,
 				900016DE295AC6E50080137B /* ProductListView.swift in Sources */,
 				900016DB295AC6640080137B /* URLImageView.swift in Sources */,
 				900016EB295ACADE0080137B /* ProductDetailViewModel.swift in Sources */,
@@ -396,12 +395,13 @@
 				900016F2295ACB330080137B /* ToFavouriteListViewModel.swift in Sources */,
 				900016D7295987090080137B /* EcomProduct.swift in Sources */,
 				900016EF295ACAFF0080137B /* ProductListViewModel.swift in Sources */,
-				900016B4295983D40080137B /* EcomProductSwiftUIiOSAppTests.swift in Sources */,
+				90001714296300BB0080137B /* ProductTest.swift in Sources */,
 				900016F8295B13410080137B /* FavouriteListView.swift in Sources */,
 				90001704295C342A0080137B /* ProductRow.swift in Sources */,
 				900016E9295ACA3D0080137B /* ViewModelsFactory.swift in Sources */,
 				900016EC295ACADE0080137B /* ProductDetailViewModel.swift in Sources */,
 				9000170A295C52FB0080137B /* ProductController.swift in Sources */,
+				900017122962FF570080137B /* APITest.swift in Sources */,
 				9000170F295C53080080137B /* ProductToBeAdded.swift in Sources */,
 				900016F5295ACCC40080137B /* ProductDetailView.swift in Sources */,
 			);

@@ -13,5 +13,5 @@ struct ProductToBeAdded {
 }
 
 extension ProductToBeAdded: Identifiable {
-    var id: String { product.id }
+  var id: String { product.id! }
 }

@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct EcomProductSwiftUIiOSAppApp: App {
   
-  let viewModelFactory = ViewModelFactory()
+  private let viewModelFactory = ViewModelFactory()
   
   var body: some Scene {
     WindowGroup {

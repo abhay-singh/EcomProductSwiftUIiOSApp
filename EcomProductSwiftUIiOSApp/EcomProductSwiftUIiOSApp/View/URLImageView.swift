@@ -20,7 +20,7 @@ struct URLImageView: View {
         .background(Color.gray)
       
     } else {
-      Image(systemName: "Profile")
+      Image(systemName: "cart")
         .resizable()
         .aspectRatio(contentMode: .fill)
         .background(Color.gray)
